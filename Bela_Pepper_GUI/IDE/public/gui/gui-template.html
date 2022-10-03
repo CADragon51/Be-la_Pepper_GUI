@@ -1,0 +1,27 @@
+<html>
+	<head>
+        <link rel="stylesheet" href="css/template.css">
+	</head>
+
+	<body scroll="no" style="margin: 0; overflow: hidden">
+		<link rel="stylesheet" href="css/dat-gui-bela-theme.css">
+		<link rel="stylesheet" href="css/style.css">
+		<div id="gui-container"></div>
+		<script>
+			window.data = "data"
+			window.Bela = window.parent.Bela;
+			window.utils = window.parent.utils;
+			window.GuiHandler = window.parent.GuiHandler;
+
+			window.addEventListener("message", function(event) {
+				$("body").append($(event.data));
+				window.parent.postMessage({ready: true});
+			});
+		</script>
+		<script src="js/socket.io.js"></script>
+		<script src="js/pepper.js"></script>
+		<script
+  var socket = io();
+		</script>
+	</body>
+</html>
