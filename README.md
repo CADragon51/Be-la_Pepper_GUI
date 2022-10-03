@@ -1,2 +1,2 @@
-# Be-la_Pepper_GUI
+# Bela_Pepper_GUI
 A Gui for the Pepper HW
